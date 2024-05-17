@@ -18,7 +18,7 @@ app.add_middleware(
 )
 
 # Load the model
-model = load_model('model_kelompok_2classkedua.h5')
+model = load_model('model.h5')
 
 @app.post("/predict/")
 async def predict(file: UploadFile = File(...)):
